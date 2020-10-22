@@ -1,6 +1,7 @@
 import * as React from "react";
 import logo from "./logo.svg";
 import "./App.css";
+import DocsList from "./components/DocsList/DocsList";
 
 function App() {
   return (
@@ -9,28 +10,10 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
       </header>
       <body>
-        <ul>
-          <li>
-            <a
-              className="App-link"
-              href="https://reactjs.org"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              React Docs
-            </a>
-          </li>
-          <li>
-            <a
-              className="App-link"
-              href="https://react-typescript-cheatsheet.netlify.app/docs/basic/getting-started/class_components"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              React-TS Cheatsheet
-            </a>
-          </li>
-        </ul>
+        <div>
+          <h1>Helpful Documentation</h1>
+          <DocsList />
+        </div>
       </body>
     </div>
   );
