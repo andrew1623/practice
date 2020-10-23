@@ -1,5 +1,5 @@
 import * as React from "react";
-import logo from "./logo.svg";
+import logo from "./static/logo.svg";
 import "./App.css";
 import { ExternalLink, ExternalLinkProps } from "./components/ExternalLink";
 
