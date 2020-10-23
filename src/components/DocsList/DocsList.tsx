@@ -15,5 +15,5 @@ const docs: LinkProps[] = [
 ];
 
 export default function DocsList() {
-  return <ul>{docs.map((link) => Link(link))}</ul>;
+  return <ul>{docs.map((docs) => Link(docs))}</ul>;
 }
