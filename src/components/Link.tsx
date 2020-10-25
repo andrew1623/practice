@@ -6,15 +6,9 @@ type LinkProps = {
   text?: string;
 };
 
-export const Link: React.FC<LinkProps> = ({
-  url,
-  text,
-  children,
-}) => {
-  return (
-    <a className="Link" href={url} target="_blank" rel="noopener noreferrer" >
-      {text}
-      {children}
-    </a>
-  );
-};
+export const Link: React.FC<LinkProps> = ({ url, text, children }) => (
+  <a className="Link" href={url} target="_blank" rel="noopener noreferrer">
+    {text}
+    {children}
+  </a>
+);

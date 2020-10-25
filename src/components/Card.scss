@@ -1,0 +1,16 @@
+@import "../styles/colors";
+
+.Card-Container {
+  border: 3px solid black;
+  border-radius: 10%;
+  display: flex;
+  margin: 1px;
+  padding: 1px;
+  max-width: fit-content;
+  color: $polar3;
+  background: $polar5;
+
+  .Card-Content {
+    padding: 10px;
+  }
+}

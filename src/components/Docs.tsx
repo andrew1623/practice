@@ -1,10 +1,11 @@
-import * as React from 'react';
+import * as React from "react";
 import { Link } from "./Link";
+import { Card } from "./Card";
 
 type DocsProps = {
   url: string;
   text: string;
-}
+};
 
 const docsList: DocsProps[] = [
   { url: "https://reactjs.org", text: "React Official Docs" },
@@ -18,16 +19,17 @@ const docsList: DocsProps[] = [
   },
 ];
 
-export const Docs: React.FC  = ({ children}) => {
+export const Docs: React.FC = ({ children }) => {
   return (
-    <ul>
-      {docsList.map(({ url, text }) => (
-        <Link url={url}>
+    <Card>
+      <h3>React Docs</h3>
+      <ul>
+        {docsList.map(({ url, text }) => (
           <li>
-            {text}
+            <Link url={url} text={text} />
           </li>
-        </Link>
-      ))}
-    </ul>
-  )
-} 
+        ))}
+      </ul>
+    </Card>
+  );
+};

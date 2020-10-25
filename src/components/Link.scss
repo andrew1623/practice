@@ -1,5 +1,10 @@
 @import "../styles/colors";
 .Link {
   font-weight: 600;
+}
+.Link:visited {
   color: $polar1;
+}
+.Link:hover {
+  color: $polar2;
 }
